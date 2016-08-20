@@ -30,7 +30,7 @@ var Board = {
 				}
 			}
 
-			xmlhttp.open("POST","readboard.php",true);
+			xmlhttp.open("GET","readboard.php",true);
 			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 			xmlhttp.send();
 
