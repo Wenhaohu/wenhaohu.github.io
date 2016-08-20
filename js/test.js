@@ -137,7 +137,7 @@ var Game = {
 				}
 			}
 
-			xmlhttp.open("GET","phpwrite2.php",true);
+			xmlhttp.open("POST","phpwrite2.php",true);
 			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 			xmlhttp.send();
 			//End of load the entry score 
