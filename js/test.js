@@ -137,7 +137,7 @@ var Game = {
 				}
 			}
 
-			xmlhttp.open("POST","phpwrite2.php",true);
+			xmlhttp.open("GET","phpwrite2.php",true);
 			xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 			xmlhttp.send();
 			//End of load the entry score 
@@ -151,7 +151,6 @@ var Game = {
 		},
 
 	update: function() {
-			console.log(score);
 			if (highScore == -99999999) {
 				// Update the score and lives
 				scoreText.text = "Score: " + score + "   Lives: " + lives;
